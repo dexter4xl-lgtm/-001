@@ -230,21 +230,30 @@ transition: all 0.5 ease;
 
 /* ======== ESTILOS MOBILE ======== */
 @media (max-width: 768px) 
-
 {
+.menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    gap: 2rem;
+  }
+
+  .menu-toggle{
+    display: none;
+  }
 
   /* Cabeçalho e navegação */
   .menu {
-    flex-direction: column;
-    gap: 1rem;
     display: none;
+    flex-direction: column;
     background: rgba(255,255,255,0.1);
     padding: 1rem;
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 60px;
+    right: 1rem;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   .menu.show {
@@ -253,7 +262,7 @@ transition: all 0.5 ease;
 
   .menu-toggle {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background: none;
     border: none;
     color: var(--claro);
@@ -270,7 +279,7 @@ transition: all 0.5 ease;
   .cabecalho {
     flex-direction: column;
     text-align: center;
-    padding: 6rem 1rem 2rem;
+    padding: 4rem 1 rem;
   }
 
   .foto-perfil {
@@ -302,6 +311,16 @@ transition: all 0.5 ease;
     padding: 1rem;
   }
 
+  .projetos-caixa {
+  display: grid;
+  gap: 1.5rem;}
+
+
+@media (min-width: 768px) {
+  .projetos-caixa {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .projetos-imagem {
     height: 180px;
   }
@@ -315,4 +334,5 @@ transition: all 0.5 ease;
     font-size: 1rem;
 
   }
+}
 }
