@@ -71,14 +71,8 @@ padding: 0.5rem ;
 .cabecalho {
       min-width: 100vh;
       display: flex;
-     justify-content: center;
-     align-items: center;
-    flex-direction: column;
-    padding-top: 300px;
-}
-
-.container {
-    display: flex;
+   flex-direction: column;
+   padding-top: 300px;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;    /* Centraliza verticalmente */
     height: 100%;
