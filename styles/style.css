@@ -227,3 +227,92 @@ transition: all 0.5 ease;
     transform: translateY(-4px) ;
     box-shadow: 0 5px 15px rgba(79, 70,229,0.4);
 }
+
+/* ======== ESTILOS MOBILE ======== */
+@media (max-width: 768px) 
+
+{
+
+  /* Cabeçalho e navegação */
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--claro);
+    cursor: pointer;
+  }
+
+  .navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Cabeçalho (foto e título) */
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Seção “sobre” */
+  .sobre {
+    padding: 3rem 1rem;
+  }
+
+  .sobre-titulo {
+    font-size: 2rem;
+  }
+
+  .sobre-caixa {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  /* Projetos */
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .projetos-imagem {
+    height: 180px;
+  }
+
+  /* Contatos */
+  .contatos {
+    padding: 3rem 1rem;
+  }
+
+  .campo-form {
+    font-size: 1rem;
+
+  }
+}
